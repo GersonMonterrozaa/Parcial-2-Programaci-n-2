@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginAgenda</servlet-name>
+        <servlet-class>LoginAgenda</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Error</servlet-name>
+        <servlet-class>Error</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Bienvenida</servlet-name>
+        <servlet-class>Bienvenida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginAgenda</servlet-name>
+        <url-pattern>/LoginAgenda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Bienvenida</servlet-name>
+        <url-pattern>/Bienvenida</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
